@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "tokyonight-moon",
+  colorscheme = "astromars",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -82,9 +82,9 @@ return {
     --   },
     -- }
   end,
-  vim.api.nvim_create_autocmd({ "VimLeave" }, {
-    callback = function()
-      vim.fn.jobstart('notify-send "Exited NeoVim"', { detach = true })
-    end,
-  })
+  -- vim.api.nvim_create_autocmd({ "VimLeave" }, {
+  --   callback = function()
+  --     vim.fn.jobstart('notify-send "Exited NeoVim"', { detach = true })
+  --   end,
+  -- })
 }
